@@ -1,25 +1,5 @@
-// const projectCards = document.querySelectorAll('.card_container');
-// const projectPresentations = document.querySelectorAll('.project_presentation');
-// const projectsCardsContainer = document.querySelector('.projects_cards');
 
-
-// projectCards.forEach((projectCard, index) => {
-//     projectCard.addEventListener('click', () => {
-//         const currentProjectPresentation = projectPresentations[index];
-
-//         // Fermer tous les autres project presentations
-//         projectPresentations.forEach((presentation, i) => {
-//             if (i !== index) {
-//                 presentation.classList.remove('active');
-//             }
-//         });
-
-//         currentProjectPresentation.classList.toggle('active');
-
-//         currentProjectPresentation.style.maxHeight = isActive ? currentProjectPresentation.scrollHeight + 'px' : '0';
-//     });
-// });
-
+// Animation Projets
 const projectCards = document.querySelectorAll('.card_container');
 const projectPresentations = document.querySelectorAll('.project_presentation');
 const projectsCardsContainer = document.querySelector('.projects_cards');
@@ -44,6 +24,7 @@ projectCards.forEach((projectCard, index) => {
 });
 
 
+// Animation clic ancre 
 document.addEventListener('DOMContentLoaded', function () {
     // Récupérer toutes les ancres dans le document
     const anchors = document.querySelectorAll('a[href^="#"]');
