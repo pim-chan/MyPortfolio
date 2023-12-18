@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo_portfolio.png">
     <title>Tamba Chloé | Portfolio</title>
 </head>
 
@@ -16,30 +17,41 @@
                     <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/>
                 </svg>    
                 <nav class="header_nav">               
-                    <a href="#about-me">Présentation</a>
-                    <a href="#projects">Projets</a>
+                    <a href="#about-me">A propos</a>
                     <a href="#competences">Compétences</a>
-                    <a href="#">Contact</a>
+                    <a href="#projects">Projets</a>
+                    <a href="mailto:tamba.chloe@outlook.fr" target="_blank">Contact</a>
                 </nav>
             </div>
         </div>        
     </header>  
 
     <!-- Bannière -->
-    <section class="ban">   
+    <section id="ban">   
         <div class="ban_content"> 
-            <h1>Bonjour, je suis Chloé </br></h1>
+            <h1>Bonjour, je suis Chloé</h1>
             <h1>Développeur <span>Web</span></h1>
-            <p class="ban_text">Lorem ipsum dolor consectetur adipisicing elit liberodicta</p>
+            <p class="ban_text">Créations front-end, designs & expériences utilisateur.</p>
         </div>
     </section> 
 
-    <!-- A propos de moi -->
+    <!-- Presentation -->
     <section id="about-me">
         <div class="title-container">            
-            <h2 class="title">A Propos de <span>Moi</span></h2>
+            <h2 class="title">A propos de <span>Moi</span></h2>
         </div>
-        <p> Passionnée de développement web actuellement en <strong> reconversion professionnelle</strong> et en cours de formation en tant qu'<strong>Intégrateur Web</strong> chez OpenClassrooms. <br/> <br/> Explorez mon portfolio pour découvrir mes projets en cours et en devenir. Je suis impatiente de partager mon <strong>parcours d'apprentissage</strong> et de discuter de <strong>futures opportunités</strong> dans le domaine du développement web. <br/> <br/>Merci de prendre le temps de découvrir <span>mes projets</span> !</p>
+        <p>
+            Actuellement en formation chez <strong>OpenClassrooms</strong> suite à une <strong>reconversion professionnelle</strong>, mon parcours d'apprentissage m'a ouvert les portes passionnantes du <strong>développement front-end.</strong></br></br>
+            Les cours dynamiques et les ressources pédagogiques de qualité m'ont permis de maîtriser les langages clés tels que <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>, tout en comprenant les principes fondamentaux du  <strong>design</strong> et de <strong>l'expérience utilisateur.</strong>
+        </p>
+    </section>
+
+<!-- Competences -->
+    <section id="competences">
+        <div class="title-container">            
+            <h2 class="title">Mes <span>Compétences</span></h2>
+        </div>
+        <img src="./images/Front-end.png" alt="Présentation des compétences">
     </section>
 
     <!-- Projets -->
@@ -51,99 +63,82 @@
         <div class="projects_cards">       
             <article class="projects_card card-1">
                 <div class="card_container">
-                    <img class="card_img" src="./images/statistics.webp" alt="projet kasa">
+                    <img class="card_img" src="./images/kasa.webp" alt="Image d'un ordinateur et d'un téléphone avec en fond l'interface du site Kasa">
                 </div>
                 <div class="project_presentation">
-                    <img class="presentation_img"  src="./images/logo.png" alt="">
+                    <img class="presentation_img"  src="./images/kasa_logo.webp" alt="Logo de Kasa">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque est sint reprehenderit tempora qui, amet quos sunt architecto voluptatibus.
+                        Application Web responsive de location immobilière. </br></br>
+                        Le site de Kasa a été codé initialement en ASP.NET avec un code legacy important. Une refonte totale a été réalisée pour passer à une stack complète en JavaScript, React côté front-end.
                     </p>
+                    <div class="container">
+                        <div class="tags_container">
+                            <div class="tag">Javascipt</div>
+                            <div class="tag">React</div>
+                            <div class="tag">Sass</div>
+                        </div>
+                        <a href="https://github.com/pim-chan/Kasa" target="_blank" class="link">
+                            <img src="./images/logo_github.webp" alt="Logo de Github" class="img_logo">
+                        </a>
+                    </div>
                 </div>
             </article>
 
             <article class="projects_card card-2">
                 <div class="card_container">
-                    <img class="card_img" src="./images/statistics (2).webp" alt="">
+                    <img class="card_img" src="./images/argent-bank.webp" alt="Image d'un ordinateur portable avec en fond l'interface du site ArgentBank">
                 </div>
                 <div class="project_presentation">
-                    <img class="presentation_img"  src="./images/argentbank_logo.png" alt="">
+                    <img class="presentation_img"  src="./images/argentbank_logo.webp" alt="Logo de ArgentBank">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque est sint reprehenderit tempora qui, amet quos sunt architecto voluptatibus.
+                        Application Web responsive d'une nouvelle banque en ligne. </br></br>
+                        Création de l’application web complète et responsive avec React, et utilisation de Redux pour gérer le state de l'ensemble de l'application.
                     </p>
+                    <div class="container">
+                        <div class="tags_container">
+                            <div class="tag">Javascipt</div>
+                            <div class="tag">React</div>
+                            <div class="tag">Redux</div>
+                        </div>
+                        <a href="https://github.com/pim-chan/argentbank-" target="_blank" class="link">
+                            <img src="./images/logo_github.webp" alt="Logo de Github" class="img_logo">
+                        </a>
+                    </div>
                 </div>
             </article>
-
+            
             <article class="projects_card card-3">
                 <div class="card_container">
-                    <img class="card_img" src="./images/menu.png" alt="">
+                    <img class="card_img" src="./images/menu-maker.webp" alt="images d'un ecran d'ordinateur et d'une tablette avec en fond d'ecran l'inferface et la presentation de Menu Maker">
                 </div>
                 <div class="project_presentation">
-                    <img class="presentation_img" src="./images/Group 13.png" alt="">
+                    <img class="presentation_img" src="./images/menu-maker_logo.png" alt="logo Menu Maker by Qwenta">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni atque est sint reprehenderit tempora qui, amet quos sunt architecto voluptatibus .
+                        Application Web de création de menus pour les restaurateurs.</br></br>
+                        Préparation de la réunion de présentation du projet avec une mise en place d'une méthodologie de travail agile et la collaboration avec le Product Owner.
                     </p>
+                    <div class="container">
+                        <div class="tags_container">
+                            <div class="tag">Trello</div>
+                            <div class="tag">Canva</div>
+                        </div>
+                        <a href="https://www.canva.com/design/DAFzsNKn3yk/md15MbXaFaYI47zKVe_IUg/view?utm_content=DAFzsNKn3yk&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="link">
+                            <img src="./images/logo_canva.png" alt="logo Canva" class="img_logo">
+                        </a>
+                    </div>
                 </div>
             </article>
         </div>
+        
+        <a href="https://github.com/pim-chan" target="_blank" class="link">
+            <img src="./images/logo_github.webp" alt="Logo de Github" class="img_logo">
+            <p class="link_text">Plus de projets à découvrir sur mon <span>GitHub</span></p>
+        </a>
     </section>
 
-    <!-- Compétences -->
-    <section id="competences">
-        <div class="title-container">
-            <h1 class="title">Mes <span>Compétences</span></h1>
-        </div>
-
-        <div class="competences_container">
-            <div class="competences_column">
-                <div class="competence">
-                    <h3>HTML</h3>
-                    <div class="skill-bar">
-                        <div class="progress-bar bar-1 "></div>
-                    </div>
-                </div>
-                <div class="competence">
-                    <h3>CSS</h3>
-                    <div class="skill-bar">
-                        <div class="progress-bar bar-2 "></div>
-                    </div>
-                </div>
-                <div class="competence">
-                    <h3>SASS</h3>
-                    <div class="skill-bar">
-                        <div class="progress-bar bar-2 "></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="competences_column">
-                <div class="competence">
-                    <h3>JAVASCRIPT</h3>
-                    <div class="skill-bar">
-                        <div class="progress-bar bar-3 "></div>
-                    </div>
-                </div>
-                <div class="competence">
-                    <h3>REACT</h3>
-                    <div class="skill-bar">
-                        <div class="progress-bar bar-3 "></div>
-                    </div>
-                </div>
-                <div class="competence">
-                    <h3>REDUX</h3>
-                    <div class="skill-bar">
-                        <div class="progress-bar bar-3 "></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <svg class="icon_mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-        </svg>
+    <footer id="footer">
+        <p>© 2023 Chloé TAMBA, Tous droits réservés.</p>
     </footer>
-    
     <script src="index.js"></script>
 </body>
 </html> 
