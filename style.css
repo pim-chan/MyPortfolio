@@ -53,6 +53,11 @@ h1, h2 {
   font-family: "Raleway", serif;
 }
 
+
+p {
+  line-height: 22px;
+}
+
 .title-container {
   font-size: var(--title-size);
   position: relative;
@@ -185,6 +190,21 @@ span {
 
 #competences {
   padding: 40px 60px;
+}
+.competences_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.competences_text {
+  height: fit-content;
+  width: 30%;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--box-shadow);
 }
 
 
@@ -407,7 +427,7 @@ footer p {
   }
 
   .title {
-    font-size: 23px;
+    font-size: 27px;
   }
 
   .header_content {
@@ -476,6 +496,16 @@ footer p {
 
   #competences img {
     width: 65%;
+  }
+
+  .competences_content {
+    flex-direction: column-reverse;
+  }
+
+  .competences_text {
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: none;
   }
 
   .presentation_text {
