@@ -597,6 +597,10 @@ footer p {
     width: 50%;
   }
 
+  .card_container:hover {
+    transform: scale(1);
+  }
+
   .project_presentation {
     width: 50%;
   }
@@ -683,10 +687,15 @@ footer p {
     width: 60%;
   }
 
+  .card_container:hover {
+    transform: scale(1);
+  }
+
   .project_presentation {
     margin: 20px auto;
     gap: 10px;
   }
+  
   
   .card_img, .presentation_img {
     width: 90%;
