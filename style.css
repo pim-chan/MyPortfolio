@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 
@@ -199,9 +198,7 @@ span {
 
  /* COMPETENCES */
 
-#competences {
-  padding: 40px 60px;
-}
+
 .competences_content {
   width: 100%;
   display: flex;
@@ -636,7 +633,6 @@ footer p {
   }
 
   #ban {
-    min-width: 600px;
     height: auto;
   } 
   
