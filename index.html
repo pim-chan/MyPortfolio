@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header class="header">
         <div class="header_overlay">
             <div class="header_content">
@@ -26,8 +28,13 @@
         </div>        
     </header>  
 
-    <!-- Bannière -->
-    <section id="ban">   
+    <!-- BANNIERE -->
+    <section id="ban">
+        <picture class="ban_img-container">
+            <source class="ban_img-small" srcset="./images/img_ban(small).webp" media="(max-width: 767.99px)">
+            <source class="ban_img-medium" srcset="./images/img_ban(medium).webp" media="(max-width: 1023.99px)">
+            <img src="./images/img_ban.webp" class="ban_img" alt="photo d'un ordinateur et d'une pile de livres posés sur un bureau.">
+        </picture>  
         <div class="ban_content"> 
             <h1 class="ban_subtitle">Bonjour, je suis Chloé</h1>
             <h1 class="ban_title">Développeur <span>Web</span></h1>
@@ -35,7 +42,7 @@
         </div>
     </section> 
 
-    <!-- Presentation -->
+    <!-- PRESENTATION -->
     <section id="about-me">
         <div class="title-container">            
             <h2 class="title">A propos de <span>Moi</span></h2>
@@ -46,7 +53,7 @@
         </p>
     </section>
 
-    <!-- Competences -->
+    <!-- COMPETENCES -->
     <section id="competences">
         <div class="title-container">            
             <h2 class="title">Mes <span>Compétences</span></h2>
@@ -90,7 +97,7 @@
         </div>
     </section>
 
-    <!-- Projets -->
+    <!-- PROJETS -->
     <section id="projects">
         <div class="title-container">
             <h2 class="title">Mes <span>Projets</span></h2>
@@ -145,7 +152,7 @@
             
             <article class="projects_card card-3">
                 <div class="card_container">
-                    <img class="card_img" src="./images/menu-maker.webp" alt="images d'un ecran d'ordinateur et d'une tablette avec en fond d'ecran l'inferface et la presentation de Menu Maker">
+                    <img class="card_img" src="./images/menu-maker2.webp" alt="images d'un ecran d'ordinateur et d'une tablette avec en fond d'ecran l'inferface et la presentation de Menu Maker">
                 </div>
                 <div class="project_presentation">
                     <img class="presentation_img" src="./images/menu-maker_logo.png" alt="logo Menu Maker by Qwenta">
@@ -172,6 +179,7 @@
         </a>
     </section>
 
+    <!-- FOOTER -->
     <footer id="footer">
         <p>© 2023 Chloé TAMBA, Tous droits réservés.</p>
     </footer>

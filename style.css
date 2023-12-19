@@ -132,17 +132,24 @@ span {
 /*BANNIERE*/
 
 #ban {
+  max-height: 100vh;
+  height: 100vh;
+  padding: 0;
   align-items: normal;
-  background: url("./images/img_ban.webp") center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   width: 100%;
   color: var(--text-2);
 }
 
+.ban_img {
+  width: 100%;
+  height: 100%;
+}
+
 .ban_content {
+  position: absolute;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -527,6 +534,8 @@ footer p {
   color: var(--text-2);
 }
 
+
+/* TABLETTES */
 @media (min-width: 768px) and (max-width: 1023.99px) {
    p {
     font-size: 0.875rem;
@@ -545,21 +554,31 @@ footer p {
   .header_logo {
     height: 30px;
   }
-
-  #ban {
-    height: 600px;
-  } 
   
   .ban_content h1 {
-    font-size: 3.125rem;
+    font-size: 2.7rem;
+  }
+
+  #ban {
+    height: auto ;
   }
 
   .ban_content h1:first-child {
-    font-size: 1.563rem;
+    font-size: 1.4rem;
   }
 
   .ban_content p {
     font-size: 1rem;
+  }
+
+  .competences_content {
+    flex-direction: column-reverse;
+  }
+
+  .competences_text {
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: none;
   }
 
   .projects_cards {
@@ -583,6 +602,7 @@ footer p {
   }
 }
 
+/* PHONE */
 @media (min-width: 320px) and (max-width: 767.99px) {
 
   .header_nav {
@@ -597,7 +617,7 @@ footer p {
   }
 
   .title {
-    font-size: 1.688rem;
+    font-size: 1.5rem;
   }
 
   .header_content {
@@ -608,14 +628,16 @@ footer p {
   }
 
   #ban {
-    height: 500px;
+    min-width: 600px;
+    height: auto;
   } 
   
   .ban_content h1 {
-    font-size: 2.188rem;
+    font-size: 1.8rem;
   }
+
   .ban_content p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .ban_content h1:first-child {
@@ -624,6 +646,24 @@ footer p {
 
   #competences img {
     width: 60%;
+  }
+
+  .competences_content {
+    flex-direction: column-reverse;
+  }
+
+  .competences_text {
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: none;
+  }
+
+  .circle-container {
+    width: 60%;
+  }
+
+  .circle-container p {
+    font-size: 0.5rem;
   }
 
   .projects_cards {
@@ -659,6 +699,8 @@ footer p {
   }
 }
 
+
+/* BREAKPOINT SECTION COMPETENCES & PRESENTATION PROJETS */
 @media (min-width: 320px) and (max-width: 659.99px) {
   #competences {
     padding: 15px 25px;
@@ -668,16 +710,6 @@ footer p {
     width: 65%;
   }
 
-  .competences_content {
-    flex-direction: column-reverse;
-  }
-
-  .competences_text {
-    width: 100%;
-    padding: 30px 20px;
-    box-shadow: none;
-  }
-
   .presentation_text {
     font-size: 0.7rem;
   }
@@ -685,5 +717,4 @@ footer p {
   .tag {
     font-size: 0.6rem;
   }
-
 }
