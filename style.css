@@ -132,7 +132,6 @@ span {
 /*BANNIERE*/
 
 #ban {
-  max-height: 100vh;
   height: 100vh;
   padding: 0;
   align-items: normal;
@@ -141,6 +140,11 @@ span {
   justify-content: center;
   width: 100%;
   color: var(--text-2);
+}
+
+.ban_img-container {
+  height: 100%;
+  width: 100%;
 }
 
 .ban_img {
