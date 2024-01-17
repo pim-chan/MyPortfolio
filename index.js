@@ -47,6 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+//Fermer modal mentions légales 
+const closeIcon = document.querySelector('.close-icon');
+const modal = document.querySelector('#legal-mentions');
+const modalLink = document.querySelector(".modal-link");
+
+closeIcon.addEventListener('click', () => {
+  modal.classList.toggle('closed')
+})
+
+modalLink.addEventListener('click', () => {
+  modal.classList.toggle('closed')
+})
+
+
   
 
 
